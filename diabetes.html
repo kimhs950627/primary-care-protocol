@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>당뇨 외래 프로토콜 — 진단·약제·3개월 추적</title>
+<meta name="description" content="당뇨 진단 기준과 전단계 분기, C-peptide 해석, A1c별 처방 골격, 동반질환별 약제 선택, eGFR 조절, 추적과 급여.">
+<meta property="og:title" content="당뇨 외래 프로토콜 — 진단·약제·3개월 추적">
+<meta property="og:description" content="당뇨 진단 기준과 전단계 분기, C-peptide 해석, A1c별 처방 골격, 동반질환별 약제 선택, eGFR 조절, 추적과 급여.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<link rel="stylesheet" href="styles/theme.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Primary Care Protocol · 외래</a>
+    <nav class="nav" aria-label="장 이동">
+      <a href="index.html">개요</a>
+      <a href="hypertension.html">혈압</a>
+      <a href="lipid.html">지질</a>
+      <a href="diabetes.html" aria-current="page">혈당</a>
+      <a href="handout.html">환자용</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Chapter 03 · Diabetes</p>
+      <h1>당뇨 — A1c가 처방을 정하고, 동반질환이 약을 바꾼다</h1>
+      <p class="lede">진단은 두 검사의 불일치를 어떻게 다룰지가 핵심이고, 처방은 <strong>A1c와 동반질환</strong>이 동시에 결정한다. 3개월마다 같은 것을 보고, 바뀐 것만 조정한다.</p>
+      <div class="meta"><span>원노트: 외래 당뇨 protocol v1.1 (2026-08-26)</span></div>
+    </div>
+
+
+    <section aria-labelledby="d1">
+      <h2 id="d1"><span class="num">01 — Screen</span>선별과 진단</h2>
+      <p>선별 대상: 35세 이상 모든 성인. 위험인자가 있으면 19세부터 — BMI ≥23, 복부비만(남 ≥90 cm·여 ≥85 cm),
+        직계가족 당뇨, IFG/IGT 과거력, 임신당뇨 또는 4 kg 이상 거대아 출산력, HDL &lt;35 또는 TG ≥250,
+        PCOS·흑색가시세포증, 심혈관질환, 스테로이드·비정형 항정신병약 복용. 고혈압 환자는 1년마다.</p>
+      <div class="tbl-wrap">
+        <table>
+          <caption>진단기준 — 다음 중 하나</caption>
+          <thead><tr><th>기준</th><th>수치</th></tr></thead>
+          <tbody>
+            <tr><td>HbA1c</td><td>≥6.5%</td></tr>
+            <tr><td>8시간 금식 공복혈장포도당</td><td>≥126 mg/dL</td></tr>
+            <tr><td>75 g OGTT 2시간</td><td>≥200 mg/dL</td></tr>
+            <tr><td>전형적 증상 + 무작위 혈당</td><td>≥200 mg/dL</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <caption>전단계와 경계값 분기(2023 KDA)</caption>
+          <thead><tr><th>구분</th><th>기준</th><th>다음 행동</th></tr></thead>
+          <tbody>
+            <tr><td>공복혈당장애(IFG)</td><td>공복 100–125</td><td>100–109 또는 A1c 5.7–6.0 → 매년 추적(BMI ≥23이면 OGTT 고려)</td></tr>
+            <tr><td>내당능장애(IGT)</td><td>OGTT 2시간 140–199</td><td>110–125 또는 A1c 6.1–6.4 → OGTT(어려우면 의뢰 또는 식후 2시간 혈당)</td></tr>
+            <tr><td>HbA1c</td><td>5.7–6.4%</td><td>임신당뇨 병력 → 출산 4–12주 후 OGTT</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>두 검사가 상반되면 <strong>높게 나온 쪽을 재검</strong>. 예: BST 110, HbA1c 6.8 → A1c를 재검해 6.5 이상이면 확진.</li>
+        <li>A1c가 &lt;6.5여도 반복 공복 130대·식후 250대면 당뇨로 판단. 관행상 1회 검사로도 진단·처방이 가능하다.</li>
+        <li>놓치지 말 것: 고령은 식후 고혈당이 먼저 나타난다. 공복+A1c만 보면 식후 기준 당뇨를 놓친다.</li>
+        <li>A1c 위양성: 철결핍빈혈, 알코올중독, 만성간질환, 고중성지방혈증, 고빌리루빈혈증. 위음성: 급격한 발병, 출혈·수혈, 용혈성빈혈, CKD 빈혈, 헤모글로빈병증, 임신 2–3분기.</li>
+        <li>혈당-A1c 불일치가 지속되면 당화알부민(연 2회 급여, JX999) 또는 CGM.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="d2">
+      <h2 id="d2"><span class="num">02 — Workup</span>초기 검사와 C-peptide</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>확진 직후 세트</caption>
+          <thead><tr><th>단계</th><th>검사</th><th>목적·해석</th></tr></thead>
+          <tbody>
+            <tr><td>확진</td><td>HbA1c, 8시간 공복혈당, (증상 시) 무작위 혈당</td><td>75 g OGTT는 의원급에서 어려움 → 식후 2시간 혈당 활용 또는 의뢰.</td></tr>
+            <tr><td>병형·기능</td><td>Fasting C-peptide(12시간 금식), anti-GAD</td><td>C-peptide는 당뇨 상병으로 6개월 1회 급여, anti-GAD는 감별 목적(평생 1회 간주, 삭감 주의).</td></tr>
+            <tr><td>기본</td><td>CBC, Na/K/Cl, LFT, BUN/Cr, uric acid, routine UA, lipid 3종</td><td>동반질환·합병증 baseline, 약제 선택(eGFR) 근거.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <caption>공복 C-peptide 해석</caption>
+          <thead><tr><th>수치</th><th>해석</th></tr></thead>
+          <tbody>
+            <tr><td>≥1.7 ng/mL</td><td>정상 분비능</td></tr>
+            <tr><td>&lt;1.7</td><td>분비능 저하</td></tr>
+            <tr><td>≤1.0</td><td>심한 저하 — SU/meglitinide 효과 기대 어려움, SGLT2i·주사제 고려</td></tr>
+            <tr><td>&lt;0.6</td><td>1형 당뇨 시사</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>1형/LADA: 비만 아님, 급격한 발현, DKA, 젊은 발병, 자가면역질환, 경구약 반응 없음 → anti-GAD + C-peptide.</li>
+        <li>췌장성(3c): 50세 이후 비만·가족력 없이 새 발생, 췌장염·흡연·음주력, 지방변 → CA19-9, C-peptide, 췌장 영상.</li>
+        <li>MODY: 25세 전 발병, 자가항체 음성, 비만 아님, 3대 가족력, SU에 매우 잘 반응 → 유전자 검사 의뢰.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="d3">
+      <h2 id="d3"><span class="num">03 — Rx</span>A1c별 처방 골격</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>초기 처방과 급여 메모(고시 2026-24호)</caption>
+          <thead><tr><th>A1c</th><th>처방</th><th>급여</th></tr></thead>
+          <tbody>
+            <tr><td>6.5–7.4</td><td>Metformin 500 mg(서방정) QD–BID → 1–2주 간격으로 750→1,000 mg 증량. 위장장애 시 감량·서방정 교체. MET 불가 시 gliclazide MR.</td><td>MET 단독. 불가 시 SU 단독(JX999). A1c ≥7.0 또는 공복 ≥130 또는 식후 ≥180이면 2제 추가.</td></tr>
+            <tr><td>≥7.5</td><td>처음부터 2제: MET+SGLT2i 또는 MET+DPP4i. 고령은 1제로 천천히.</td><td>MET 포함 2제를 처음부터 인정. 인정 조합 중 1종만 써도 급여.</td></tr>
+            <tr><td>8.0–9.0</td><td>SGLT2i보다 다른 약제 우선(탈수·euglycemic DKA). 빠른 강하가 필요하면 SU, 조절 후 교체.</td><td>신속 변경은 JX999 사유로 사례별 인정.</td></tr>
+            <tr><td>≥9.0</td><td>주사제 고려(GLP-1RA 우선, 이화증상 시 인슐린). 주사 거부 시 MET+SU 등 적극 병용.</td><td>초기 A1c ≥9%에서 인슐린 급여. 일차의료기관은 내과 전원 고려.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">2025 KDA 제9판의 변화 — 저용량 조기 병용, “무조건 메트포르민 먼저” 조항 제거, 목표 달성 후 유지·탈강화,
+        심·신장질환이면 SGLT2i 우선(CKD에서는 GLP-1RA보다 SGLT2i), NT-proBNP ≥125인 Stage B HFrEF에서 적극 사용,
+        증상 있는 HFrEF 또는 DM+CKD에는 finerenone 추가. 체중·MASH·뇌졸중에서는 GLP-1RA 선호. 항암 중이면 SU는 피한다.</p>
+      <p>목표: 일반 성인 A1c &lt;6.5–7.0%, 공복 80–130, 식후 &lt;180. 고령은 건강 7.0–7.5 / 노쇠전단계 7.0–8.0 / 노쇠 7.5–8.5%.</p>
+    </section>
+
+    <section aria-labelledby="d4">
+      <h2 id="d4"><span class="num">04 — Choice</span>동반질환별 약제와 eGFR</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>상황별 선호</caption>
+          <thead><tr><th>상황</th><th>선호 약제</th></tr></thead>
+          <tbody>
+            <tr><td>죽상경화심혈관질환</td><td>SGLT2i, GLP-1RA</td></tr>
+            <tr><td>심부전</td><td>SGLT2i (TZD 금기)</td></tr>
+            <tr><td>CKD(eGFR &lt;60 또는 UACR ≥30)</td><td>SGLT2i(dapa ≥25, empa ≥20부터 신장·심장 이득), GLP-1RA</td></tr>
+            <tr><td>뇌경색·TIA</td><td>GLP-1RA(sema/dula), TZD(pioglitazone)</td></tr>
+            <tr><td>비만·과체중</td><td>SGLT2i, GLP-1RA</td></tr>
+            <tr><td>고령·노쇠·저혈당 고위험</td><td>DPP4i</td></tr>
+            <tr><td>마른 당뇨</td><td>DPP4i 선호, SGLT2i 체중 감소 주의, 근력운동 권고</td></tr>
+            <tr><td>식후 고혈당 우세</td><td>DPP4i(±aGI, meglitinide)</td></tr>
+            <tr><td>C-peptide ≤1.0</td><td>SGLT2i 또는 주사제(SU·meglitinide 효과↓)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <caption>eGFR별 용량</caption>
+          <thead><tr><th>약제</th><th>기준</th></tr></thead>
+          <tbody>
+            <tr><td>Metformin</td><td>eGFR 45 미만 주의 → 30–45: 1,000 mg 이내·새로 시작 금지 → &lt;30 금기. 조영제: eGFR 30–60이면 당일~48시간 중단.</td></tr>
+            <tr><td>SGLT2i</td><td>혈당강하 목적은 eGFR ≥45. 신장·심장 이득은 dapa ≥25 / empa ≥20.</td></tr>
+            <tr><td>DPP4i</td><td>용량조절 불필요: lina·gemi·teneli·evogliptin.</td></tr>
+            <tr><td>SU</td><td>신기능 저하 시 저혈당↑ — gliclazide MR 저용량부터.</td></tr>
+            <tr><td>TZD</td><td>가능하나 부종 주의(심부전 금기).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>SGLT2i는 심부전·CKD에서 적극 고려하되 <strong>탈수·금식·급성질환·인슐린 결핍</strong>에서는 DKA, 고령·이뇨제 병용에서는 저혈압, 반복 생식기 감염에서는 재발 부담을 미리 평가한다.</li>
+        <li>병용 급여: 인정 3제는 ① MET+SGLT2i+DPP4i ② MET+SGLT2i(ertugli·enavogliflozin 제외)+TZD. 2제 불가 조합(SGLT2i+DPP4i, SGLT2i+TZD 등)은 1종 전액본인부담.</li>
+        <li>인슐린은 경구제에도 A1c ≥7%면 급여, 경구제 2종까지 병용. GLP-1RA는 MET+SU 불량 + BMI ≥25 또는 인슐린 곤란 시 급여(DPP4i는 중단).</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="d5">
+      <h2 id="d5"><span class="num">05 — F/U</span>3개월 추적과 시나리오</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>상황별 다음 수</caption>
+          <thead><tr><th>시나리오</th><th>다음 추적</th><th>확인</th><th>행동</th></tr></thead>
+          <tbody>
+            <tr><td>신규 확진·약제 시작</td><td>4–8주</td><td>공복·식후 혈당, 부작용, 수분섭취</td><td>목표 미달 시 증량 또는 2제 추가</td></tr>
+            <tr><td>조절 양호</td><td>3–6개월</td><td>A1c 연 최소 2회, 체중, 혈압</td><td>유지. 과도하게 낮으면 감량 검토</td></tr>
+            <tr><td>조절 불량(A1c ≥7.0 지속)</td><td>3개월</td><td>순응도·생활습관, C-peptide, 기전</td><td>2제→3제, 4제 단계부터 주사제 적극 권유</td></tr>
+            <tr><td>SGLT2i 사용 중</td><td>시작 4–12주</td><td>생식기 감염, 야간뇨·탈수, eGFR(initial dip)</td><td>sick day 교육 재확인</td></tr>
+            <tr><td>저혈당(&lt;70)</td><td>조기 재진</td><td>원인, SU·인슐린 여부</td><td>15–20 g 포도당 + 15분 후 재측정 교육, 원인 약제 감량</td></tr>
+            <tr><td>고령·노쇠</td><td>3개월</td><td>저혈당, 체중 감소, 순응도</td><td>목표 완화(7.5–8.5%), DPP4i 위주 단순 처방</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <caption>연간 검사 배치</caption>
+          <thead><tr><th>구분</th><th>초진</th><th>3M</th><th>6M</th><th>9M</th><th>12M</th></tr></thead>
+          <tbody>
+            <tr><td>매 방문</td><td colspan="5">HbA1c, 혈당(공복±식후), BP, 체중, 부작용·순응도 — 이후 안정 시 3–6개월 간격</td></tr>
+            <tr><td>연 2회</td><td>LFT, lipid 3종, BUN/Cr</td><td>—</td><td>✓</td><td>—</td><td>✓</td></tr>
+            <tr><td>연 1회</td><td>CBC, Na/K/Cl, UA, urine Cr, UACR, C-peptide, EKG, Chest PA</td><td colspan="3">—</td><td>✓ 전체</td></tr>
+            <tr><td>합병증</td><td>안과(안저)·발 평가(10 g 모노필라멘트) — T2DM은 진단 시부터</td><td colspan="3">—</td><td>안과 1–2년, 발 매년</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>동반질환 목표(2025 KDA): 혈압은 140/90부터 약제, 160/100 이상이면 2제 이상, 목표 130/80(알부민뇨·관상동맥질환이면 ACEi/ARB 우선, DBP는 55 미만으로 떨어뜨리지 않는다).
+        LDL은 기본 &lt;100, 10년 이상·위험인자·표적장기손상 &lt;70, ASCVD &lt;55 + 50% 감소.</p>
+    </section>
+
+    <section aria-labelledby="d6">
+      <h2 id="d6"><span class="num">06 — Refer·Claim</span>응급, 의뢰, 청구</h2>
+      <ul>
+        <li>즉시 응급 평가·전원: 이화증상 동반 고혈당 / DKA 의심(구토·복통·의식변화·케톤) / 전격성 1형 의심 / SGLT2i 복용 중 euglycemic DKA.</li>
+        <li>의뢰: 35세 미만 발병 / 고령 새 발생 심한 당뇨 / T1DM·LADA·MODY 의심 / A1c ≥9%+증상 / 신장내과(UACR &gt;30 또는 eGFR &lt;60) / 족부 궤양·망막병증·말초혈관병증.</li>
+        <li>청구: 당뇨병용제 고시 제2026-24호(2026.2.1 시행) — 단독 → 2제(2–4개월 후 A1c ≥7.0 등) → 3제(인정 조합만). HbA1c 고시 2019-175호 연 6회, 확진 전 R73.9 주상병·미달 시 E11.9 배제.</li>
+        <li>소모성 재료: 인슐린 사용자는 요양기관정보마당 등록 후 EMR 처방전(혈당측정지·채혈침·주사바늘).</li>
+      </ul>
+      <p class="note">급여 기준은 개정이 잦다 — 처방 전 최신 고시를 확인한다.</p>
+    </section>
+
+    <div class="pager">
+      <a href="lipid.html">← 지질</a>
+      <a href="handout.html">환자용 안내문 →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>개인 학습·실무 정리. 처방과 용량은 최신 고시·지침과 환자 상태를 확인한 뒤 담당 의사가 결정한다.</p>
+    <p><a href="https://kimhs950627.github.io/">← 학습 페이지 허브</a> · <a href="https://kimhs950627.github.io/lab-followup/">검진 lab 후속관리</a></p>
+  </div>
+</footer>
+</body>
+</html>

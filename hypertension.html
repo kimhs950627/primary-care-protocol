@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>고혈압 외래 프로토콜 — 진단·처방·추적</title>
+<meta name="description" content="가정혈압 기준, 위험도별 목표, ARB 중심 병용 알고리즘, 부작용 대처와 추적 타임라인, 급여 기준.">
+<meta property="og:title" content="고혈압 외래 프로토콜 — 진단·처방·추적">
+<meta property="og:description" content="가정혈압 기준, 위험도별 목표, ARB 중심 병용 알고리즘, 부작용 대처와 추적 타임라인, 급여 기준.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<link rel="stylesheet" href="styles/theme.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Primary Care Protocol · 외래</a>
+    <nav class="nav" aria-label="장 이동">
+      <a href="index.html">개요</a>
+      <a href="hypertension.html" aria-current="page">혈압</a>
+      <a href="lipid.html">지질</a>
+      <a href="diabetes.html">혈당</a>
+      <a href="handout.html">환자용</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Chapter 01 · Hypertension</p>
+      <h1>고혈압 — 8주 안에 결정되는 것들</h1>
+      <p class="lede">진단은 양팔과 가정혈압으로, 처방은 <strong>ARB 중심 병용</strong>으로, 판단은 8주 뒤로. 외래에서 반복되는 순서만 남겼다.</p>
+      <div class="meta"><span>원노트: 고혈압 외래 Protocol v1.0 (2026-08-26)</span></div>
+    </div>
+
+
+    <section aria-labelledby="h1">
+      <h2 id="h1"><span class="num">01 — Dx</span>진단과 분류</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>측정 방법별 고혈압 기준</caption>
+          <thead><tr><th>측정</th><th>기준</th></tr></thead>
+          <tbody>
+            <tr><td>진료실 혈압</td><td>≥140/90</td></tr>
+            <tr><td>가정 혈압</td><td>≥135/85</td></tr>
+            <tr><td>24시간 활동혈압 일일평균</td><td>≥130/80 (주간 ≥135/85, 야간 ≥120/70)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>분류: 주의 120–129/&lt;80 · 전단계 130–139/80–89 · 1기 140–159/90–99 · 2기 ≥160/100 · 수축기단독 ≥140/&lt;90.</li>
+        <li>2026 제6판에서 <strong>이완기단독고혈압(IDH, &lt;140/≥90)</strong> 신설 — 젊은 층에 흔하고 약물치료 대상이다.</li>
+        <li>처음 ≥140/90이면 반복 측정 + 가정혈압으로 확진. 첫 측정은 양팔, 이후 높은 쪽으로. 양팔 차이 ≥20이면 혈관질환을 고려한다.</li>
+        <li>백의 vs 가면: 진료실(+)·가정(+) → 치료 / 진료실(+)·가정(−) → 백의, 생활습관+추적 / 진료실(−)·가정(+) → 가면(전단계의 30%, 당뇨·대사증후군·흡연자에 흔함) → 치료 고려. 진료실 &lt;130이면 일률적 가정혈압은 불필요.</li>
+      </ul>
+      <p class="note">선별: 일반 인구 2년마다, 40세 이상·가족력·전단계·비만은 1년마다 진료실 혈압.</p>
+    </section>
+
+    <section aria-labelledby="h2">
+      <h2 id="h2"><span class="num">02 — Home BP</span>가정혈압을 어떻게 받을 것인가</h2>
+      <ul>
+        <li>아침(용변 후·식사 전) + 저녁(취침 1시간 내), 각 1–2분 간격 2회.</li>
+        <li>처음엔 7일간(첫날은 버림), 추적은 외래 직전 5–7일간. 최소 30개 값.</li>
+        <li>“이상한 값 임의로 빼지 마세요”를 교육하고 혈압 수첩을 쓰게 한다.</li>
+        <li>평가: 외래 실무 목표는 <strong>가정혈압 110–130</strong>. 기립성 저혈압이 없으면 120 미만도 관찰 가능(2024 ESC).</li>
+      </ul>
+      <p class="note">초진에서 놓치지 말 것 — 병력: 이차성 단서, NSAID·스테로이드·한약·피임약. 진찰: 양팔 혈압, 경동맥·복부 잡음, 심장·폐, 하지 부종, dorsalis pedis.</p>
+    </section>
+
+    <section aria-labelledby="h3">
+      <h2 id="h3"><span class="num">03 — Target</span>위험도에 따른 목표</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>목표 혈압 (2026 제6판 반영)</caption>
+          <thead><tr><th>임상 상황</th><th>목표</th></tr></thead>
+          <tbody>
+            <tr><td>합병증 없는 저·중위험, 노인</td><td>&lt;140/90 (노인 DBP ≥60 유지)</td></tr>
+            <tr><td>고위험(무증상장기손상 또는 위험인자 ≥3), 당뇨, 심혈관질환, CKD, 뇌졸중</td><td>&lt;130/80</td></tr>
+            <tr><td>알부민뇨(+) 고혈압</td><td>130/80 + ACEi/ARB 최대 내약용량 + UACR 연 1회</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>이차성 고혈압 의심(~5%): 30세 이하 또는 55세 이상 새 발생 / 발작적 고혈압+두통·발한 / 근력저하·저칼륨 /
+        복부 잡음·ACEi/ARB 후 Cr 30%↑ / OSA 의심 / 약물 불응·갑자기 악화.</p>
+    </section>
+
+    <section aria-labelledby="h4">
+      <h2 id="h4"><span class="num">04 — Rx</span>처방 — 무엇으로 시작하고 어떻게 더할까</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>초기 약제 전략</caption>
+          <thead><tr><th>상황</th><th>처방</th></tr></thead>
+          <tbody>
+            <tr><td>1기</td><td>단일제(노쇠 고령은 half dose). 적응증 없으면 ARB 우선. 노인·수축기단독은 CCB, 당뇨는 ACEi/ARB.</td></tr>
+            <tr><td>2기(≥160/100) 또는 고위험</td><td>표준용량 2제 병용(급여 가능). 주로 ARB+CCB(ACCOMPLISH). 고령은 1제로.</td></tr>
+            <tr><td>저위험 1기</td><td>생활요법 시도 가능하나, 저용량 조기 처방이 예후에 유리.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <caption>약제군별 선택</caption>
+          <thead><tr><th>약제</th><th>선택·팁</th></tr></thead>
+          <tbody>
+            <tr><td>ARB</td><td>단백뇨: losartan·irbesartan·fimasartan / 젊은 환자: telmisartan(반감기 24h) / 고령·다약제: candesartan·olmesartan. potency: azilsartan &gt; olme·fima·telmi &gt; losartan·valsartan.</td></tr>
+            <tr><td>CCB</td><td>Amlodipine 표준. 부종 시 S-amlodipine 등으로 변경하거나 ARB 병용(부종↓). 단백뇨면 cilnidipine·manidipine·benidipine. 변동성 큰 혈압에 유리.</td></tr>
+            <tr><td>이뇨제</td><td>3–4번째 add-on, 저용량(HCTZ 12.5 / chlorthalidone 12.5 / indapamide 1.25). 염분민감성·야간 고혈압·CKD·CHF에 효과적. thiazide-like 우선.</td></tr>
+            <tr><td>베타차단제</td><td>초치료 아님 — 심부전·협심증·심방세동·MI 후. 젊고 HR 높은 환자, 편두통 동반 시. carvedilol·nebivolol 선호. 천식·서맥 금기.</td></tr>
+            <tr><td>Spironolactone</td><td>저항성의 4번째. 0.25–0.5T 시작, eGFR &lt;45·K ≥4.5 주의, 1–2주 내 K 확인.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>2배 증량 시 추가 강하: ARB 20–30%(부작용 적어 증량은 ARB 우선), CCB 30–40%(부종↑), BB 20%, 이뇨제는 저용량 유지.</li>
+        <li>2제: ARB+CCB(당뇨·CKD 선호) 또는 ARB+thiazide → 3제: ARB+CCB+thiazide → 4제(저항성): +spironolactone 또는 BB.</li>
+        <li>복합제는 순응도가 걱정될 때 초기부터. 부작용이 걱정되거나 3제 이상이면 따로 시작해 안정 후 복합제로.</li>
+        <li>감량: 가정혈압 &lt;120/80 + 기립성 문진. 기립성(−)이고 110/70 미만이 아니면 유지.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h5">
+      <h2 id="h5"><span class="num">05 — AE</span>부작용 대처</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>흔한 부작용과 처방</caption>
+          <thead><tr><th>부작용</th><th>대처</th></tr></thead>
+          <tbody>
+            <tr><td>기립성 저혈압·어지러움</td><td>증상 시 혈압 확인. 찬물 500 mL·천천히 기립·수분·압박스타킹. α-blocker·이뇨제 중단/교체. 난치성은 의뢰.</td></tr>
+            <tr><td>CCB 하지부종</td><td>이뇨제는 무효. 감량 / S-amlodipine 등 변경 / ARB 병용 / 밤 복용.</td></tr>
+            <tr><td>ACEi 마른기침</td><td>4주 내, 여성·비흡연자에 흔함 → ARB 교체.</td></tr>
+            <tr><td>ARB/ACEi 고칼륨·Cr↑</td><td>시작 전 + 10–14일 후 lab. K ≥5.0 조절, ≥5.5 중단 고려. Cr 30%↑ 또는 eGFR 25%↓ → 신혈관 협착 평가 후 재검, 지속 시 50% 감량.</td></tr>
+            <tr><td>이뇨제 저칼륨·통풍</td><td>2주 후 전해질(1달 뒤면 적응되어 소용없다). 통풍 시 losartan 병용, indapamide 변경 또는 타 계열.</td></tr>
+            <tr><td>발기부전</td><td>동맥경화 지표로 설명. 2–3개월 조절 유지 시 호전이 흔함. 이뇨제·BB → 타 계열, PDE5i는 안전한 선택.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="h6">
+      <h2 id="h6"><span class="num">06 — F/U</span>추적 타임라인</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>시작 후 무엇을 언제 보는가</caption>
+          <thead><tr><th>구분</th><th>시작(0)</th><th>1–2주</th><th>1개월</th><th>3개월</th><th>6개월</th><th>12개월</th></tr></thead>
+          <tbody>
+            <tr><td>혈압</td><td>양팔 진료실 + 가정혈압 교육</td><td>진료실+가정</td><td>✓</td><td>✓</td><td>✓</td><td>✓ 이후 안정 시 1–2달 간격</td></tr>
+            <tr><td>안전성</td><td>기저 K·Cr-eGFR</td><td>ARB/ACEi 10–14일 K·Cr / 이뇨제 2주 전해질 / 부작용·기립성 문진</td><td>부작용</td><td>순응도</td><td>—</td><td>연 1회 lab</td></tr>
+            <tr><td>연 1회 종합</td><td colspan="5">EKG, routine UA, CBC, Na/K, Cr-eGFR, FBS+HbA1c, lipid, TSH, CXR, LFT, UACR</td><td>✓ 전체 재측정</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>시작·증량·감량 시마다 1–2주 내 재진, 가정혈압 필수. 치료 시작 1년까지는 1달(길면 2달) 간격 — 텀이 길면 순응도가 떨어진다.</li>
+        <li>약효는 8주. 판단이 이르다 싶으면 2–4주 더 관찰한다.</li>
+        <li>계절 변동: 환절기 가정혈압 강화, 여름 저혈압·겨울 상승에 대응.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h7">
+      <h2 id="h7"><span class="num">07 — Refer</span>응급과 의뢰</h2>
+      <p><strong>고혈압성 위기(≥180/120)</strong>: 특이 증상 확인 + EKG·RFT·UA·CXR·fundoscopy(±troponin·BNP·echo).
+        응급(표적장기손상 +) → 즉시 응급실(IV 강압). 긴박(urgency) → 20–30분 안정 후 양팔 재측정, 경구약 증량 후 수일 내 강압·외래 추적.
+        <strong>nifedipine 속방정 금지.</strong> 구별이 어려우면 응급실.</p>
+      <ul>
+        <li>의뢰: 이차성 의심 / 저항성(표준 3제 불량 — OSA·알도스테론증) / 난치성 / 조절 어려운 기립성 저혈압 / echo상 유의미 판막질환·심부전, 경동맥 ≥50% 협착.</li>
+        <li>Echo: EKG LVH 의심·심잡음, 장기간 조절 불량, 호흡곤란·부종, 맥압이 큰 경우, 위기 시 BNP와 함께.</li>
+        <li>Carotid: 잡음·뇌졸중/TIA 병력이면 급여. 다수 위험인자에서 비급여 제안 → plaque(+)면 무증상장기손상(혈관)으로 고위험군 재분류.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="h8">
+      <h2 id="h8"><span class="num">08 — Claim</span>급여 메모</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>청구 기준(확인일 2026-08-26)</caption>
+          <thead><tr><th>항목</th><th>기준</th></tr></thead>
+          <tbody>
+            <tr><td>고혈압약제</td><td>고시 제2023-23호. 140/90 시작, 160/100부터 2제 가능(실무상 혈압과 무관하게 1–2제 가능 → 130/80 목표 조절도 급여).</td></tr>
+            <tr><td>권장되지 않는 2제</td><td>이뇨제+α-blocker / BB+ACEi / BB+ARB / ACEi+ARB → JX999 사유 또는 동반질환 상병. 4제 이상은 투여소견 필수.</td></tr>
+            <tr><td>동반질환 상병</td><td>심혈관(I20–I25·I50), 뇌혈관(I60–I69), CKD(N18), 당뇨(E10–E14), 말초혈관(I73.9)이 있으면 자유 처방.</td></tr>
+            <tr><td>검사 상병</td><td>확진 전 약 처방 R03.0 / HbA1c R73.9(미달 시 E11.9 배제) / lipid 4종은 하나를 계산값으로 / UACR은 미량알부민(D3002)+요크레아티닌(D2280) 각각.</td></tr>
+            <tr><td>초음파</td><td>Echo는 심장질환 의심 사유를 기록해야 급여. Carotid는 뇌혈관질환 의심 외 비급여, IMT 단독 산정 불가.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a href="index.html">← 개요</a>
+      <a href="lipid.html">이상지질혈증 →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>개인 학습·실무 정리. 처방과 용량은 최신 고시·지침과 환자 상태를 확인한 뒤 담당 의사가 결정한다.</p>
+    <p><a href="https://kimhs950627.github.io/">← 학습 페이지 허브</a> · <a href="https://kimhs950627.github.io/lab-followup/">검진 lab 후속관리</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이상지질혈증 외래 프로토콜 — 위험도·스타틴·추적</title>
+<meta name="description" content="위험군별 LDL 목표, 스타틴 선택과 Rule of 6, ezetimibe 병용, 근육 부작용 대처, 추적 타임라인, 급여 기준.">
+<meta property="og:title" content="이상지질혈증 외래 프로토콜 — 위험도·스타틴·추적">
+<meta property="og:description" content="위험군별 LDL 목표, 스타틴 선택과 Rule of 6, ezetimibe 병용, 근육 부작용 대처, 추적 타임라인, 급여 기준.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/site.css">
+<link rel="stylesheet" href="styles/theme.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html">Primary Care Protocol · 외래</a>
+    <nav class="nav" aria-label="장 이동">
+      <a href="index.html">개요</a>
+      <a href="hypertension.html">혈압</a>
+      <a href="lipid.html" aria-current="page">지질</a>
+      <a href="diabetes.html">혈당</a>
+      <a href="handout.html">환자용</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Chapter 02 · Lipids</p>
+      <h1>이상지질혈증 — 목표를 정하면 약이 정해진다</h1>
+      <p class="lede">위험군이 LDL 목표를 정하고, 목표가 스타틴 강도를 정한다. 2배 증량은 6%, <strong>ezetimibe는 18%</strong>라는 숫자 하나가 처방 순서를 바꾼다.</p>
+      <div class="meta"><span>원노트: 고지혈증 외래 Protocol v1.0 (2026-08-26)</span></div>
+    </div>
+
+
+    <section aria-labelledby="l1">
+      <h2 id="l1"><span class="num">01 — Dx</span>언제 검사하고 무엇을 확인하나</h2>
+      <ul>
+        <li>증상 없이 검진에서 발견되는 경우가 대부분. 고혈압·당뇨 환자는 연 1회 동반 평가.</li>
+        <li>핵심 개념: <strong>Lower the better, Earlier the better</strong> — LDL 누적 노출이 위험을 결정한다. 젊은 환자도 적극 관리하되, 젊은 여성은 임신 계획을 확인(스타틴 임신 중 금기).</li>
+        <li>이상 수치는 1회 재검으로 확인. 금식 여부는 크게 문제 삼지 않는다.</li>
+        <li>이차성 감별: 갑상선기능저하(TSH), 신증후군, 담도폐쇄, 스테로이드, 임신, 음주·당뇨(고TG).</li>
+        <li>기본 검사: CBC, LFT(ALT), GTP, FBS/HbA1c, lipid, TSH, CPK, ±경동맥 초음파.</li>
+      </ul>
+      <p class="note">FH 의심 → 의뢰: 황색종(눈 주위·아킬레스건·팔꿈치), 각막환, 조기 관상동맥질환 가족력 + LDL 크게 상승.
+        유전검사 대상은 LDL &gt;190(소아 160)+이차성 없음+가족력이며, 현실적으로 LDL ≥225에서 의뢰를 고민한다(Dutch criteria).</p>
+    </section>
+
+    <section aria-labelledby="l2">
+      <h2 id="l2"><span class="num">02 — Target</span>위험군과 LDL 목표</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>위험군별 LDL·non-HDL 목표(제5판)</caption>
+          <thead><tr><th>위험군</th><th>LDL</th><th>non-HDL</th></tr></thead>
+          <tbody>
+            <tr><td>초고위험 — 관상동맥질환</td><td>&lt;55 ①</td><td>&lt;85</td></tr>
+            <tr><td>고위험 — 죽상경화성 뇌졸중·TIA, 경동맥 협착 ≥50%, 말초동맥질환, 복부대동맥류, 당뇨(10년 이상 또는 위험인자·표적장기손상)</td><td>&lt;70 ①</td><td>&lt;100</td></tr>
+            <tr><td>당뇨(10년 미만, 위험인자 없음)</td><td>&lt;100</td><td>&lt;130</td></tr>
+            <tr><td>중등도(위험인자② 2개 이상)</td><td>&lt;130</td><td>&lt;160</td></tr>
+            <tr><td>저위험(0–1개)</td><td>&lt;160</td><td>&lt;190</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>① 초고위험·고위험은 <strong>기저치 대비 50% 이상 감소</strong>를 동시에 권고.
+        ② 위험인자: 연령(남 ≥45·여 ≥55), 조기 CVD 가족력(남 &lt;55·여 &lt;65), 고혈압, 흡연, HDL &lt;40.
+        당뇨+표적장기손상 또는 위험인자 3개 이상이면 &lt;55를 선택적으로 고려하고, CKD 1–3기도 고위험으로 본다.</p>
+      <p>치료 시작: 초고위험·고위험은 바로 약제 / 중등도·저위험은 수주~수개월 생활습관 후 반응이 없으면 약제.
+        급성심근경색은 기저 LDL과 무관하게 즉시 스타틴.</p>
+    </section>
+
+    <section aria-labelledby="l3">
+      <h2 id="l3"><span class="num">03 — Imaging</span>Carotid sono·CAC로 위험도 재분류</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>중등도·저위험에서 판단이 애매할 때</caption>
+          <thead><tr><th>검사·소견</th><th>해석과 행동</th></tr></thead>
+          <tbody>
+            <tr><td>Carotid plaque(+) — 주위 벽보다 50%↑ 두께 또는 ≥1.5 mm 돌출</td><td>저·중등도 위험군을 상향 → 스타틴 고려, 적어도 LDL &lt;100. 1–2년 추적.</td></tr>
+            <tr><td>경동맥 협착 ≥50%</td><td>고위험군 확정 → LDL &lt;70 + 기저치 50%↓ + 항혈소판제. ≥70%·증상 동반 시 의뢰.</td></tr>
+            <tr><td>IMT 단독</td><td>근거 부족 — plaque 유무로 판단.</td></tr>
+            <tr><td>CAC 0</td><td>위험인자 없으면 스타틴 보류(Power of Zero), 5–10년 후 재평가.</td></tr>
+            <tr><td>CAC 1–99 / &gt;100 / &gt;400</td><td>≥55세 고려 / 스타틴 시작 / aspirin 저울질 + 기능검사 의뢰.</td></tr>
+            <tr><td>ApoB, Lp(a)</td><td>TG가 높아 LDL이 부정확할 때·당뇨·대사증후군에서 보조. Lp(a)는 일생 1회 측정 고려(&gt;50 mg/dL 위험).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">로컬에서 CAC CT가 어려우면 경동맥 초음파가 선호되는 실무 검사다. 경동맥 초음파는 뇌혈관질환 의심 외 스크리닝은 비급여 — 사전 고지.</p>
+    </section>
+
+    <section aria-labelledby="l4">
+      <h2 id="l4"><span class="num">04 — Rx</span>스타틴 선택과 강도</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>상황별 선호 스타틴</caption>
+          <thead><tr><th>상황</th><th>선호</th></tr></thead>
+          <tbody>
+            <tr><td>일반적 초치료</td><td>Rosuvastatin(동아시아인 LDL 강하 우수, 5 mg ≒ atorva 20 mg) 또는 atorvastatin.</td></tr>
+            <tr><td>저위험·목표와 차이 적음</td><td>Pitavastatin, pravastatin.</td></tr>
+            <tr><td>고위험·큰 감량 필요</td><td>Atorvastatin, rosuvastatin.</td></tr>
+            <tr><td>당뇨 전단계·당뇨 위험</td><td>Pitavastatin(new-onset DM 적음).</td></tr>
+            <tr><td>신기능 저하·단백뇨</td><td>Atorvastatin(신배설 최소, 용량조절 불필요).</td></tr>
+            <tr><td>다약제·상호작용</td><td>pravastatin·pitavastatin &gt; rosuvastatin(CYP2C9) &gt; atorva·simvastatin(CYP3A4 — 항진균제·clarithromycin 주의).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Rule of 6</strong> — 스타틴 2배 증량은 추가 감량 <strong>+6%</strong>, ezetimibe 추가는 <strong>+18%</strong>(8배 증량 효과).
+        그래서 고령·간신기능 부담이 있으면 atorva 20·rosuva 10까지 올린 뒤 ezetimibe를 적극 add-on한다.
+        고강도+ezetimibe에도 미달이면 PCSK9i(대학병원 의뢰).</p>
+      <div class="tbl-wrap">
+        <table>
+          <caption>고중성지방혈증(TG) 알고리즘</caption>
+          <thead><tr><th>TG</th><th>처방</th></tr></thead>
+          <tbody>
+            <tr><td>200–499</td><td>생활습관(체중·음주·탄수화물) 먼저 → 지속 시 스타틴 우선(non-HDL 기준). 목표 도달 후에도 200–499면 fibrate 또는 omega-3 추가.</td></tr>
+            <tr><td>≥500</td><td>췌장염 예방 — fibrate(omega-3보다 근거 우위) + 이차성·유전적 원인 확인. LDL 미달 동반 시 스타틴+fibrate 병용(삭감 없음).</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>필요 감량률 = (치료 전 LDL − 목표) ÷ 치료 전 LDL ×100.</li>
+        <li>30–50% 감량 → 중등도: atorva 10–20 / rosuva 5–10 / pitava 2–4 mg. ≥50% → 중등도+ezetimibe 복합제 또는 고강도.</li>
+        <li>LODESTAR: rosuvastatin이 LDL 강하는 우수하나 new-onset DM·백내장 수술·중단율은 더 높았다(BMJ 2023).</li>
+        <li>스타틴+fenofibrate 횡문근융해는 RCT에서 유의한 증가가 없었으나 고령·신기능 저하·고용량에서는 주의.</li>
+        <li>Omega-3는 icosapent ethyl 4 g만 근거(REDUCE-IT) — 국내 비급여, 고용량에서 심방세동 ↑.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="l5">
+      <h2 id="l5"><span class="num">05 — AE</span>근육 증상과 중단 기준</h2>
+      <ul>
+        <li>SAMS: 근육통 → CK 측정. <strong>CK &lt;4×ULN</strong>: 2–4주 중단 후 호전 시 다른 스타틴(친수성·저용량) 재시도 — 90% 성공. 격일·주 1–2회, 또는 ezetimibe로 용량 대체.</li>
+        <li><strong>CK ≥4×ULN</strong>: 4–6주 중단. <strong>CK ≥10×ULN 또는 검은 소변</strong>: 즉시 중단·수액.</li>
+        <li>위험인자(고령·저체중·고용량·fibrate 병용·간신기능 저하)가 있으면 처음부터 저용량+ezetimibe. Nocebo가 흔하다.</li>
+        <li>New-onset DM: 발생 9%↑ vs 심혈관 예방 44%↑ — 이득이 압도적. 당뇨 위험군은 pitavastatin.</li>
+        <li>간수치: 치료 전 ALT ≥3×ULN이면 보류. fibrate는 투약 전·3개월 후·이후 6개월마다 Cr·CPK.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="l6">
+      <h2 id="l6"><span class="num">06 — F/U</span>추적과 중단</h2>
+      <div class="tbl-wrap">
+        <table>
+          <caption>추적 타임라인</caption>
+          <thead><tr><th>구분</th><th>시작</th><th>4–12주</th><th>3개월</th><th>6개월</th><th>12개월</th></tr></thead>
+          <tbody>
+            <tr><td>Lipid</td><td>TC·LDL·HDL·TG + 위험도 분류</td><td>반응 평가 — 미달 시 증량 또는 ezetimibe</td><td>✓</td><td>✓</td><td>✓ 이후 3–12개월 간격</td></tr>
+            <tr><td>안전성</td><td>ALT·CK 기저치(≥3×ULN 원인 규명), TSH, FBS/A1c, Cr</td><td>LFT / 근육 증상 시 CK</td><td>증상</td><td>증상</td><td>연 1회 LFT, fibrate면 6개월마다 Cr·CPK</td></tr>
+            <tr><td>감량</td><td colspan="4">—</td><td>2회 연속 LDL &lt;50이면 고려(뇌경색·MI는 제외)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>추적은 4–12주에 반응이 거의 확정된다. 이후 3→6→12개월로 늘린다.</li>
+        <li>복용 시간: rosuva·atorva·pitava·ezetimibe는 식사 무관 / simva·prava는 저녁 / fenofibrate는 식후 즉시, omega-3는 식사와 함께.</li>
+        <li>2차 예방은 평생 유지. 1차 예방도 중단하면 2–3개월 내 복귀하므로 웬만하면 유지한다.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="l7">
+      <h2 id="l7"><span class="num">07 — Refer·Claim</span>즉시 대응과 급여</h2>
+      <ul>
+        <li>즉시 대응: 횡문근융해 의심(근육통+검은 소변+CK ≥10×ULN) → 스타틴 중단·수액·응급 평가 / TG ≥500 지속 → 췌장염 위험, fibrate 즉시 / ACS → 기저 LDL 무관하게 스타틴 + 응급 의뢰.</li>
+        <li>의뢰: FH 의심 / 고강도+ezetimibe에도 미달(PCSK9i) / 경동맥 유의미 협착 / CAC &gt;400 / 원인 불명 난치성 고TG.</li>
+      </ul>
+      <div class="tbl-wrap">
+        <table>
+          <caption>청구 기준(확인일 2026-08-26)</caption>
+          <thead><tr><th>항목</th><th>기준</th></tr></thead>
+          <tbody>
+            <tr><td>치료제</td><td>고시 제2014-34호 — 위험요인 0–1개 LDL ≥160 / 2개↑ ≥130 / CHD 준하는 위험 ≥100 / ACS ≥70. 고시는 구 기준이나 실무상 기준 미달도 삭감이 드물다.</td></tr>
+            <tr><td>상병</td><td>스타틴±ezetimibe E78.08(또는 E78.2) / fibrate·omega-3 E78.1 / 복합형 E78.08+E78.1. fibrate+omega-3 동시는 1종 전액본인부담.</td></tr>
+            <tr><td>Ezetimibe</td><td>고시 제2016-66호 — 원칙은 스타틴 불응·증량 불가 시이나 초치료·복합제도 삭감이 드물다.</td></tr>
+            <tr><td>Omega-3</td><td>고시 제2015-18호 — TG &gt;500, 또는 위험요인·당뇨+TG &gt;200에서 fibrate 부작용 예상 시 1일 4 g. icosapent ethyl은 비급여.</td></tr>
+            <tr><td>복합제</td><td>고혈압+고지혈증(2025-15호)은 바로 가능 / 당뇨+고지혈증(2018-174호)은 단일제 먼저 후 전환만.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="pager">
+      <a href="hypertension.html">← 혈압</a>
+      <a href="diabetes.html">당뇨 →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>개인 학습·실무 정리. 처방과 용량은 최신 고시·지침과 환자 상태를 확인한 뒤 담당 의사가 결정한다.</p>
+    <p><a href="https://kimhs950627.github.io/">← 학습 페이지 허브</a> · <a href="https://kimhs950627.github.io/lab-followup/">검진 lab 후속관리</a></p>
+  </div>
+</footer>
+</body>
+</html>
